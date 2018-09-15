@@ -3,8 +3,11 @@ module.exports = {
   testEnvironmentOptions: {
     seleniumAddress: 'http://localhost:9515'
   },
-  setupFiles: ['./setTimeout.js'],
+  setupTestFrameworkScriptFile: './setupTestFrameworkScriptFile.js',
   testMatch: ['**/__tests__/webdriver/**/*'],
   globalSetup: './globalSetup.js',
-  globalTeardown: './globalTeardown.js'
+  globalTeardown: './globalTeardown.js',
+  globals: {
+    __APP_URL__: 'http://localhost:8000'
+  }
 };
