@@ -1,3 +1,6 @@
+__tests__/webdriver
+.DS_Store
+
 # Logs
 logs
 *.log
